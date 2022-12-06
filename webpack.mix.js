@@ -1,4 +1,5 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
+const path = require("path");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,19 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+/*
+mix.babelConfig({
+    plugins: ["@babel/plugin-syntax-dynamic-import"],
+});*/
+
+mix.webpackConfig({
+    resolve: {
+        modules: [path.resolve(__dirname, "node_modules")],
+    },
+})
+    .options({
+        processCssUrls: false,
+    })
+    .js("resources/js/index.js", "public/js")
+    .sourceMaps(false, "source-map")
+    .sass("resources/scss/index.scss", "public/css");
