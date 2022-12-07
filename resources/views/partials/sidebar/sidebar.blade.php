@@ -18,18 +18,18 @@ $routes = [
 'icon' => 'ni ni-single-02',
 'color' => 'text-yellow',
 ],
-/*[
+[
 'label' => 'Grupos',
-'routeName' => 'groups',
+'routeName' => 'group',
 'icon' => 'fas fa-users',
 'color' => 'text-info',
 ],
-[
-'label' => 'Alumnos',
-'routeName' => 'pupils',
-'icon' => 'ni ni-planet',
-'color' => 'text-orange',
-]*/
+// [
+// 'label' => 'Alumnos',
+// 'routeName' => 'pupils',
+// 'icon' => 'ni ni-planet',
+// 'color' => 'text-orange',
+// ]*/
 ];
 @endphp
 
