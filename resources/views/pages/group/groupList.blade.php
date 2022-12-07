@@ -22,6 +22,7 @@
     </div>
 @endsection
 @section('main')
+{{-- Formulario de géneral de Grupo --}}
     <div class='row justify-content-center'>
         <div class='col-lg-12'>
             <div class="card">
@@ -37,6 +38,7 @@
                         @csrf
                         <div class="pl-lg-4">
                             <div class="row">
+                                {{-- Campos para agregar grupo --}}
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-first-name">Carrera</label>
@@ -54,9 +56,11 @@
                                 </div>
                                 <input type='hidden' name='id' id="id">
                             </div>
+                            {{-- Fin de Campos para agregar grupo --}}
                         </div>
                     </form>
                     <div class='row justify-content-center'>
+                    {{-- Formulario de Alumno--}}
                     <div class='col-lg-4'>
                         <div class="card" style="margin-left: 30px;">
                             <div class="card-header">
@@ -70,6 +74,7 @@
                                 <form>
                                     @csrf
                                     <div class="pl-lg-2">
+                                        {{-- Campos para agregar alumno --}}
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-group">
@@ -94,17 +99,21 @@
                                             </div>
                                             <input type='hidden' name='id' id="id">
                                         </div>
+                                    {{-- Fin de Campos para agregar alumno --}}
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
+                    {{--Fin de Formulario de Alumno--}}
+                    {{-- Lista de Alumnos--}}
                     <div class='col-lg-8'>
                         <div class="card" style="margin-right: 30px;">
                             <div class="card-header border-0">
                                 <h3 class="mb-0 text-center">Listado de Alumnos</h3>
                             </div>
                             <div class="table-responsive">
+                                {{-- Tabla de alumnos --}}
                                 <table class="table table-hover align-items-center table-flush">
                                     <thead class="thead-light">
                                         <tr>
@@ -136,16 +145,20 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                {{--Fin de Tabla de alumnos --}}
                             </div>
                         </div>
                     </div>
+                    {{-- Boton para guardar --}}
                     <div class='text-center my-3'>
                         <button type="button" class="btn btn-outline-default">Guardar</button>
                     </div>
+                    {{--Fin de Boton para guardar --}}
                     </div>
                    
                 </div>
             </div>
         </div>
     </div>
+{{--Fin de Formulario de géneral de Grupo --}}
 @endsection
