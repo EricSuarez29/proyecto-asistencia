@@ -20,3 +20,7 @@ Route::controller(TeacherController::class)
         Route::get('/update/{id}', 'show')->name('show');
         Route::post('/', 'store')->name('store');
     });
+
+
+//Group section
+ Route::get('/group', fn () => view('pages.group.groupList'))->name('group');
