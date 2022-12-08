@@ -6,12 +6,18 @@ $routes = [
 'icon' => 'ni ni-tv-2',
 'color' => 'text-primary',
 ],
-/*[
+[
 'label' => 'Listas de Asistencia',
-'routeName' => 'assistances',
-'icon' => 'ni ni-bullet-list-67',
+'routeName' => 'attendanceList',
+'icon' => 'fa-duotone fa-square-list', 
 'color' => 'text-default',
-],*/
+],
+[
+'label' => 'Asistencias de grupos',
+'routeName' => 'savedGroups',
+'icon' => 'fa-duotone fa-square-list', 
+'color' => 'text-default',
+],
 [
 'label' => 'Maestros',
 'routeName' => 'teachers.index',
