@@ -42,8 +42,9 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-first-name">Carrera</label>
-                                        <input type="text" id="se" class="form-control"
-                                            placeholder="Carrera">
+                                        <select id="se" class="form-control">
+                                            <option selected>Seleccionar...</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -66,7 +67,7 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h3 class="mb-0">Alumnos</h3>
+                                        <h3 class="mb-0">Agregar alumnos</h3>
                                     </div>
                                 </div>
                             </div>
@@ -78,23 +79,12 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <label class="form-control-label" for="input-first-name">Nombre</label>
-                                                    <input type="text" id="input-first-name" class="form-control"
-                                                        placeholder="Nombre">
+                                                    <label class="form-control-label" for="input-first-name">Matrícula</label>
+                                                    <input type="number" id="input-first-name" class="form-control"
+                                                        placeholder="Matrícula">
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="form-control-label" for="input-last-name">Apellido Paterno</label>
-                                                    <input type="text" id="input-last-name" class="form-control"
-                                                        placeholder="Apellido Paterno">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="form-control-label" for="input-last-name">Apellido Materno</label>
-                                                    <input type="text" id="input-last-name" class="form-control"
-                                                        placeholder="Apellido Materno">
+                                                <div class="text-right">
+                                                    <button type="button" class="btn btn-outline-default">Guardar alumno</button>
                                                 </div>
                                             </div>
                                             <input type='hidden' name='id' id="id">
@@ -117,23 +107,23 @@
                                 <table class="table table-hover align-items-center table-flush">
                                     <thead class="thead-light">
                                         <tr>
+                                            <th scope="col" class="sort" data-sort="budget">Matrícula</th>
                                             <th scope="col" class="sort" data-sort="name">Nombre</th>
-                                            <th scope="col" class="sort" data-sort="budget">Apellidos</th>
                                             <th scope="col" class="sort" data-sort="status">Estatus</th>
-                                            <th></th>
+                                            <th scope="col" class="sort" data-sort="delete">Eliminar</th>
                                         </tr>
                                     </thead>
                                     <tbody class="list">
                                         <tr>
-                                            <td>
-                                                <span class="name mb-0 text-sm"></span>
-                                            </td>
                                             <td class="budget">
-                                                
+                                                20000001
+                                            </td>
+                                            <td>
+                                                <span class="name mb-0 text-sm">Iván Moisés Ornelas Meza</span>
                                             </td>
                                             <td>
                                                 <span class="badge badge-dot mr-4">
-                                                    <i class="bg-success"></i>
+                                                    <i class="bg-success"></i>Activo
                                                     <span class="status"></span>
                                                 </span>
                                             </td>
