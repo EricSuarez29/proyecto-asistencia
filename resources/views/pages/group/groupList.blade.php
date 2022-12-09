@@ -159,6 +159,5 @@
                 </div>
             </div>
         </div>
-    </div>
 {{--Fin de Formulario de géneral de Grupo --}}
 @endsection

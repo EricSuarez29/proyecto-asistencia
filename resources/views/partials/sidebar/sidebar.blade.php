@@ -7,8 +7,8 @@ $routes = [
 'color' => 'text-primary',
 ],
 [
-'label' => 'Listas de Asistencia',
-'routeName' => 'attendanceList',
+'label' => 'Listado de grupos',
+'routeName' => 'groupList',
 'icon' => 'fa-duotone fa-square-list', 
 'color' => 'text-default',
 ],

@@ -25,11 +25,11 @@ Route::controller(TeacherController::class)
 //Group section
  Route::get('/group', fn () => view('pages.group.groupList'))->name('group');
 
- //Attendance List section
- Route::get('/attendanceList', fn () => view('pages.attendanceList.attendanceL'))->name('attendanceList');
+ //Group list section
+ Route::get('/groupList', fn () => view('pages.groupList.groupList'))->name('groupList');
 
  //Assistance generator section
-//  Route::get('/assistanceGenerator', fn () => view('pages.assistanceGenerator.assistanceG'))->name('assistanceGenerator');
+  Route::get('/assistanceGenerator', fn () => view('pages.assistanceGenerator.assistanceG'))->name('assistanceGenerator');
 
  //saved groups section
  Route::get('/savedGroups', fn () => view('pages.savedGroups.savedGroups'))->name('savedGroups');
