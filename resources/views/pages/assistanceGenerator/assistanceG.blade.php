@@ -44,16 +44,16 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-first-name">Materia:</label>
-                                        <input type="text" id="se" class="form-control" placeholder="Materia">
+                                        <input type="text" id="txtMatter" class="form-control" placeholder="Materia">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 form-group">
                                     <label class="form-control-label" for="input-first-name">Grupo:</label>
                                     <select class="form-control">
                                         <option selected></option>
-                                        <option value="1">IDGS704</option>
-                                        <option value="2">EVN704</option>
-                                        <option value="3">LT704</option>
+                                        <option value="">IDGS704</option>
+                                        <option value="">EVN704</option>
+                                        <option value="">LT704</option>
                                     </select>
                                 </div>
                             </div>
@@ -66,42 +66,40 @@
                             </div>
                             <div class="row " style="margin-left: 8px;">
                                 <div class="form-check col-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="checkMonday" checked>
                                     <label class="form-control-label" for="flexCheckChecked">
                                         Lunes
                                     </label>
                                 </div>
                                 <div class="form-check col-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                    <input class="form-check-input" type="checkbox" value="" id="checkTuesday"
                                         checked>
                                     <label class="form-control-label" for="flexCheckChecked">
                                         Martes
                                     </label>
                                 </div>
                                 <div class="form-check col-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                    <input class="form-check-input" type="checkbox" value="" id="checkWednesday"
                                         checked>
                                     <label class="form-control-label" for="flexCheckChecked">
                                         Miércoles
                                     </label>
                                 </div>
                                 <div class="form-check col-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                    <input class="form-check-input" type="checkbox" value="" id="checkThursday"
                                         checked>
                                     <label class="form-control-label" for="flexCheckChecked">
                                         Jueves
                                     </label>
                                 </div>
                                 <div class="form-check col-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="checkFriday" checked>
                                     <label class="form-control-label" for="flexCheckChecked">
                                         Viernes
                                     </label>
                                 </div>
                                 <div class="form-check col-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                    <input class="form-check-input" type="checkbox" value="" id="checkSaturday"
                                         checked>
                                     <label class="form-control-label" for="flexCheckChecked">
                                         Sábado
@@ -111,36 +109,34 @@
                             <div class="row ">
                                 <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" id="input-last-name" class="form-control" placeholder="dia">
+                                        <input type="text" id="txtDayMonday" class="form-control" placeholder="dia">
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" id="input-last-name" class="form-control"
+                                        <input type="text" id="txtDayTuesday" class="form-control" placeholder="dia">
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <input type="text" id="txtDayWednesday" class="form-control"
                                             placeholder="dia">
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" id="input-last-name" class="form-control"
+                                        <input type="text" id="txtDayThursday" class="form-control"
                                             placeholder="dia">
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" id="input-last-name" class="form-control"
-                                            placeholder="dia">
+                                        <input type="text" id="txtDayFriday" class="form-control" placeholder="dia">
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" id="input-last-name" class="form-control"
-                                            placeholder="dia">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-group">
-                                        <input type="text" id="input-last-name" class="form-control"
+                                        <input type="text" id="txtDaySaturday" class="form-control"
                                             placeholder="dia">
                                     </div>
                                 </div>
@@ -159,7 +155,7 @@
                                                         class="ni ni-calendar-grid-58"></i></span>
                                             </div>
                                             <input class="form-control" placeholder="Fecha inicio" type="text"
-                                                value="">
+                                                id="textCourseStartDate" value="">
                                         </div>
                                     </div>
                                 </div>
@@ -171,7 +167,7 @@
                                                         class="ni ni-calendar-grid-58"></i></span>
                                             </div>
                                             <input class="form-control" placeholder="Fecha fin" type="text"
-                                                value="">
+                                                type="textCourseEndDate" value="">
                                         </div>
                                     </div>
                                 </div>
@@ -181,9 +177,9 @@
                                     <label class="form-control-label" for="input-first-name">Tipo de periodo:</label>
                                     <select class="form-control">
                                         <option selected></option>
-                                        <option value="1">Cuatrimestre</option>
-                                        <option value="2">Semestre</option>
-                                        <option value="3">Ciclo anual</option>
+                                        <option value="Cuatrimestre">Cuatrimestre</option>
+                                        <option value="Semestre">Semestre</option>
+                                        <option value="Ciclo anual">Ciclo anual</option>
                                     </select>
                                 </div>
                             </div>
@@ -192,38 +188,226 @@
                                     <label class="form-control-label">Parciales:</label>
                                 </div>
                             </div>
-                            <div class="row" style="margin-left: 1px;">
+                            <div class="row" style="margin-left: 12px;">
                                 <div class="input-daterange datepicker row align-items-center">
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                    <input class="form-control col-3" type="text" value="">
-                                                <input class="form-control" placeholder="Fecha inicio" type="text" value="">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i
-                                                            class="ni ni-calendar-grid-58"></i></span>
-                                                </div>
-                                              </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">1</span>
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Inicio</span>
+                                            </div>
+                                            <input class="form-control" placeholder="Fecha inicio" type="text"
+                                                id="txtPartialOne" value="">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="ni ni-calendar-grid-58"></i></span>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
                                             <div class="input-group">
-                                                    <input class="form-control col-3" type="text" value="">
-                                                <input class="form-control" placeholder="Fecha inicio" type="text" value="">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Fin</span>
+                                                </div>
+                                                <input class="form-control" placeholder="Fecha fin" type="text"
+                                                    id="txtPartialEndOne" value="">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i
                                                             class="ni ni-calendar-grid-58"></i></span>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="input-daterange datepicker row align-items-center">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">2</span>
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Inicio</span>
+                                            </div>
+                                            <input class="form-control" placeholder="Fecha inicio" type="text"
+                                                id="txtPartialTwo" value="">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="ni ni-calendar-grid-58"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Fin</span>
+                                                </div>
+                                                <input class="form-control" placeholder="Fecha fin" type="text"
+                                                    id="txtPartialEndTwo" value="">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i
+                                                            class="ni ni-calendar-grid-58"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-daterange datepicker row align-items-center">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">3</span>
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Inicio</span>
+                                            </div>
+                                            <input class="form-control" placeholder="Fecha inicio" type="text"
+                                                id="txtPartialThree" value="">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="ni ni-calendar-grid-58"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Fin</span>
+                                                </div>
+                                                <input class="form-control" placeholder="Fecha fin" type="text"
+                                                    id="txtPartialEndThree" value="">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i
+                                                            class="ni ni-calendar-grid-58"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <input type='hidden' name='id' id="id">
+                            <div class="row " style="margin-left: 1px;">
+                                <div style="color:#5e72e4;">
+                                    <label class="form-control-label">Periodo vacacional intermedio:</label>
+                                </div>
+                            </div>
+                            <div class="input-daterange datepicker row align-items-center">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="ni ni-calendar-grid-58"></i></span>
+                                            </div>
+                                            <input class="form-control" placeholder="Fecha inicio" type="text"
+                                                id="txtHolidayPeriodI" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="ni ni-calendar-grid-58"></i></span>
+                                            </div>
+                                            <input class="form-control" placeholder="Fecha fin" type="text"
+                                                id="txtHolidayPeriodIEnd" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row " style="margin-left: 1px;">
+                                <div style="color:#5e72e4;">
+                                    <label class="form-control-label">Día(s) Inhabil(es)</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class='col-12'>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-items-center table-flush text-center">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th scope="col" class="sort" data-sort="name">Fecha</th>
+                                                    <th scope="col" class="sort" data-sort="budget">Descripcción
+                                                    </th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                        <div class="input-daterange datepicker row align-items-center">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" placeholder="Fecha" type="text"
+                                                            id="fechaInabilOne" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text"
+                                                            placeholder="Descripcción" id="fechaInabilOneEnd"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-daterange datepicker row align-items-center">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" placeholder="Fecha" type="text"
+                                                            id="fechaInabilTwo" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text"
+                                                            placeholder="Descripcción" id="fechaInabilOneTwoEnd"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-daterange datepicker row align-items-center">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" placeholder="Fecha" type="text"
+                                                            id="fechaInabilThree" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text"
+                                                            placeholder="Descripcción" id="fechaInabilThreeEnd"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <input type='hidden' name='id' id="id">
+                    </form>
                 </div>
-                </form>
+                <div class='text-center my-3'>
+                    <button type="button" class="btn btn-outline-default">Guardar</button>
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
 @endsection
